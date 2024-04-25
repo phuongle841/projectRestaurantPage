@@ -1,0 +1,73 @@
+:root {
+  --padding: 20px;
+  --font: 1.2rem;
+  --transition: all ease 0s;
+  --imgWidth: 80vw;
+  --imgHeight: 80vh;
+  --buttonGap: 10rem;
+}
+body {
+  background-color: #f0f0f0f0;
+  height: 100vh;
+}
+* {
+  box-sizing: border-box;
+  /* border: 1px #000 solid; */
+  padding: 0%;
+  margin: 0%;
+  font-size: 16px;
+  font-family: "Times New Roman", Times, serif;
+}
+header {
+  height: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fdfaf5;
+}
+nav {
+  display: flex;
+  gap: var(--buttonGap);
+  padding: 10px;
+}
+nav > button {
+  border: none;
+  background-color: transparent;
+  font-size: var(--font);
+  transition: var(--transition);
+}
+nav > button:hover {
+  text-decoration: underline;
+  color: #dc6b19;
+}
+#content {
+  height: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--padding);
+}
+#content > .intro {
+  display: flex;
+  width: 60%;
+  align-items: center;
+  padding: var(--padding);
+  flex-direction: row;
+  gap: 40px;
+}
+.intro > p {
+  padding: var(--padding);
+}
+.intro > p:first-child {
+  font-size: 64px;
+}
+.intro > p:nth-child(2) {
+  font-size: 28px;
+}
+footer {
+  background-color: #fdfaf5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 10%;
+}
