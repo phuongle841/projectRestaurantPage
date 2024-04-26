@@ -9,7 +9,7 @@ let menuButton = buttons[1];
 let aboutButton = buttons[2];
 
 (function defaultPage(params) {
-  about.build();
+  home.build();
 })();
 
 homeButton.addEventListener("click", () => {
