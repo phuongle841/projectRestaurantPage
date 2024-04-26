@@ -6,6 +6,7 @@ const menu = (function () {
     let intro = document.createElement("div");
     let numberDishes = 6;
 
+    let titleDescribe = returnTitleDescribe();
     for (let i = 0; i < numberDishes; i++) {
       const element = document.createElement("div");
       let img = document.createElement("img");
@@ -22,8 +23,8 @@ const menu = (function () {
       tittle.classList.add("title");
       text.classList.add("text");
 
-      tittle.innerHTML = returnTitleDescribe()[i][0];
-      text.innerHTML = returnTitleDescribe()[i][1];
+      tittle.innerHTML = titleDescribe[i][0];
+      text.innerHTML = titleDescribe[i][1];
       img.src = returnImgUrl()[i];
     }
 

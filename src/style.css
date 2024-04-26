@@ -5,6 +5,7 @@
   --imgWidth: 80vw;
   --imgHeight: 80vh;
   --buttonGap: 10rem;
+  --border: 1px solid #000;
 }
 body {
   background-color: #f0f0f0f0;
@@ -12,7 +13,6 @@ body {
 }
 * {
   box-sizing: border-box;
-  /* border: 1px #000 solid; */
   padding: 0%;
   margin: 0%;
   font-size: 18px;
@@ -76,10 +76,7 @@ nav > button:hover {
   cursor: pointer;
   display: grid;
   grid-template-columns: 1fr 1fr;
-}
-.dish > img {
-  padding: 10px;
-  height: 100%;
+  align-items: center;
 }
 .dish > div {
   padding: var(--padding);
@@ -90,13 +87,20 @@ nav > button:hover {
 }
 .about {
   width: 600px;
-  gap: var(--padding);
   display: flex;
   flex-direction: column;
+  padding: var(--padding);
+  background-color: #fdfaf5;
+}
+.about > h1 {
+  font-size: 32px;
 }
 .about > .Chief {
   display: flex;
   flex-direction: column;
+  gap: 10px;
+  padding: var(--padding);
+  border-bottom: solid 1px #dc6b19;
 }
 footer {
   background-color: #fdfaf5;

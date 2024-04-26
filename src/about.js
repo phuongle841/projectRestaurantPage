@@ -3,9 +3,12 @@ const about = (function () {
     let content = document.querySelector("#content");
     content.innerHTML = "";
     let intro = document.createElement("div");
-
+    let header = document.createElement("h1");
+    header.innerHTML = "Our chiefs!!!";
+    intro.appendChild(header);
     let numberChiefs = 3;
 
+    let chiefInform = returnChiefInform();
     for (let i = 0; i < numberChiefs; i++) {
       const element = document.createElement("div");
       element.classList.add("Chief");
@@ -13,8 +16,8 @@ const about = (function () {
       let title = document.createElement("p");
       let text = document.createElement("p");
 
-      title.innerHTML = returnChiefInform()[i][1];
-      text.innerHTML = returnChiefInform()[i][2];
+      title.innerHTML = chiefInform[i][1];
+      text.innerHTML = chiefInform[i][2];
 
       intro.appendChild(element);
       element.appendChild(title);
